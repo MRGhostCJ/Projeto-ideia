@@ -1,0 +1,165 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.dashboard-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Blateral {
+    width: 20vw;
+    background-color: #071eee;
+    color: white;
+    padding: 2vh;
+    height: 100vh;
+    transition: transform 0.3s ease;
+    position: relative;
+}
+
+.Blateral h2 {
+    text-align: center;
+}
+
+.Blateral ul {
+    list-style: none;
+    padding: 0;
+}
+
+.Blateral ul li {
+    margin: 2vh 0;
+}
+
+.Blateral ul li a {
+    color: rgb(247, 247, 248);
+    text-decoration: none;
+}
+
+.ConteudoPrincipal {
+    flex: 1;
+    padding: 2vh;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 3vh;
+    cursor: pointer;
+    position: absolute;
+    top: 2vh;
+    left: 2vh; /* Ajuste para o canto superior esquerdo */
+}
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    margin: 2vh 0;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: white;
+    padding: 2vh;
+    border-radius: 1vh;
+    box-shadow: 0 0 1vh rgba(3, 0, 175, 0.1);
+    width: 30vw;
+    text-align: center;
+    margin: 2vh 0;
+}
+
+.gráficos {
+    margin: 2vh 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 2vh;
+}
+
+table, th, td {
+    border: 0.1vh solid #ddd;
+}
+
+th, td {
+    padding: 1vh;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+/* Media Queries */
+@media (max-width:  480px) {
+    .Blateral {
+        width: 70vw; /* Largura da barra lateral em telas pequenas */
+        height: 100vh;
+        position: fixed; /* Mantém a barra fixa na tela */
+        top: 0;
+        left: 0;
+        transform: translateX(-100%); /* Esconde a barra lateral */
+        transition: transform 0.3s ease-in-out;
+        z-index: 1000;
+    }
+
+    .Blateral.active {
+        transform: translateX(0); /* Exibe a barra lateral quando ativada */
+    }
+
+    .ConteudoPrincipal {
+        padding: 2vh;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90vw;
+    }
+
+    .menu-icon {
+        display: block;
+        position: fixed;
+        top: 1vh;
+        left: 1vh;
+        z-index: 2001;
+        background-color: #2b39ff;
+        color: white;
+        padding: 1vh;
+        border-radius: 5px;
+    }
+}
+
+/* Ajuste para telas extremamente pequenas, como Apple Watch */
+@media (max-width: 200px) {
+    .Blateral {
+        width: 100%;
+        height: 100%;
+        transform: translateX(-100%);
+        position: absolute;
+    }
+
+    .Blateral.active {
+        transform: translateX(0);
+    }
+
+    .ConteudoPrincipal {
+        padding: 1vh;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 100%;
+        font-size: 10px; /* Diminui o tamanho do texto */
+    }
+
+}

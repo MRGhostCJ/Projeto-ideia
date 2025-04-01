@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload de Conteúdo</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../css/prof.css">
+    <script src="../js/navbar.js" defer></script>
+    <script src="../js/upload.js" defer></script>
+</head>
+<body>
+    <header class="navbar">
+        <span class="menu-icon" id="menu-icon">&#9776;</span>
+        <h1>Upload de Conteúdo</h1>
+        <nav id="nav-links" class="nav-links">
+            <ul>
+                <li><a href="calendario.html"><span class="material-icons">event</span></a></li>
+                <li><a href="heaader.html"><span class="material-icons">logout</span></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="top">
+            <h2>Bem-vindo à Área dos Professores</h2>
+        </div>
+        <section class="upload-container">
+            <form id="upload-form">
+                <div class="form-group">
+                    <label for="area">Área:</label>
+                    <select id="area" name="area" required>
+                        <option value="coercao-civil">Construção Civil</option>
+                        <option value="informatica">Informática</option>
+                        <option value="ambas">Construção Civil e Informática</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="tipo-conteudo">Tipo de Conteúdo:</label>
+                    <select id="tipo-conteudo" name="tipo-conteudo" required>
+                        <option value="pdf">PDF</option>
+                        <option value="video">Vídeo</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="classe">Classe:</label>
+                    <select id="classe" name="classe" required>
+                        <option value="10">10ª</option>
+                        <option value="11">11ª</option>
+                        <option value="12">12ª</option>
+                        <option value="13">13ª</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="descricao">Descrição:</label>
+                    <textarea id="descricao" name="descricao" rows="4" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="file-upload">Carregar Arquivo:</label>
+                    <input type="file" id="file-upload" name="file-upload" accept=".pdf, .mp4" required>
+                </div>
+                <button type="submit" class="btn-submit">Enviar</button>
+                <div id="error-message" class="error-message"></div>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

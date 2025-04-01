@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos do Curso de Informática</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f7fb;
+            color: #333;
+        }
+
+        header {
+            background-color: #071eee;
+            color: white;
+            padding: 1rem 2rem;
+            text-align: center;
+        }
+
+        .video-galeria {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+        }
+
+        .video-galeria h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+            color: #071eee;
+        }
+
+        .videos {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .video-card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            overflow: hidden;
+            transition: transform 0.2s;
+        }
+
+        .video-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .video-card iframe {
+            width: 100%;
+            height: 200px;
+            border: none;
+        }
+
+        .video-info {
+            padding: 1rem;
+        }
+
+        .video-info h3 {
+            margin: 0 0 0.5rem 0;
+            font-size: 1.2rem;
+            color: #071eee;
+        }
+
+        .video-info p {
+            font-size: 0.95rem;
+            color: #555;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #071eee;
+            color: white;
+            padding: 1rem;
+            margin-top: 3rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+       <img src="../imagem/bg.jpg" alt="">
+    </header>
+
+    <section class="video-galeria">
+        <h2>Galeria de Aulas</h2>
+        <div class="videos">
+            <div class="video-card">
+                <iframe src="https://www.youtube.com/embed/LdEPke7mXlk" allowfullscreen></iframe>
+                <div class="video-info">
+                    <h3>Aula 1: Introdução à Informática</h3>
+                    <p>Esta aula aborda os conceitos básicos de informática, como hardware, software e sistemas operacionais.</p>
+                </div>
+            </div>
+
+            <div class="video-card">
+                <iframe src="https://www.youtube.com/embed/oX3qY5_Uzfs" allowfullscreen></iframe>
+                <div class="video-info">
+                    <h3>Aula 2: Lógica de Programação</h3>
+                    <p>Introdução à lógica de programação com exemplos práticos e linguagem simples.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

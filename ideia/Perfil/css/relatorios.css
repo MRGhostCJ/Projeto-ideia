@@ -1,0 +1,157 @@
+.dashboard-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Blateral {
+    width: 250px;
+    background-color: #071eee;
+    color: #fff;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.Blateral ul {
+    list-style: none;
+    padding: 0;
+}
+
+.Blateral ul li {
+    margin-bottom: 15px;
+}
+
+.Blateral ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.Blateral ul li a:hover {
+    text-decoration: underline;
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.report-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: flex-start;
+}
+
+.report-item {
+    flex: 1 1 300px;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.report-item canvas {
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .Blateral {
+        width: 70vw; /* Largura da barra lateral em telas pequenas */
+        height: 100vh;
+        position: fixed; /* Mantém a barra fixa na tela */
+        top: 0;
+        left: 0;
+        transform: translateX(-100%); /* Esconde a barra lateral */
+        transition: transform 0.3s ease-in-out;
+        z-index: 1000;
+    }
+
+    .Blateral.active {
+        transform: translateX(0); /* Exibe a barra lateral quando ativada */
+    }
+
+    .main-content {
+        padding: 2vh;
+    }
+
+    .report-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .report-item {
+        width: 90vw;
+    }
+
+    .menu-icon {
+        display: block !important; /* Garante que o ícone sempre apareça */
+        position: fixed;
+        top: 2vh;
+        left: 2vh;
+        z-index: 2001;
+        background-color: #071eee;
+        color: white;
+        padding: 1vh;
+        border-radius: 5px;
+    }
+}
+
+@media (max-width:  480px) {
+    .Blateral {
+        width: 70vw; /* Largura da barra lateral em telas pequenas */
+        height: 100vh;
+        position: fixed; /* Mantém a barra fixa na tela */
+        top: 0;
+        left: 0;
+        transform: translateX(-100%); /* Esconde a barra lateral */
+        transition: transform 0.3s ease-in-out;
+        z-index: 1000;
+    }
+    
+    .Blateral.active {
+        transform: translateX(0); /* Exibe a barra lateral quando ativada */
+    }
+}
+
+.menu-icon {
+    display: block !important; /* Garante que o ícone sempre apareça */
+    position: fixed;
+    top: 2vh;
+    left: 2vh;
+    z-index: 2001;
+    background-color: #071eee;
+    color: white;
+    padding: 1vh;
+    border-radius: 5px
+}

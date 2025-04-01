@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendário</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../css/aluno.css">
+    <script src="../js/navbar.js" defer></script>
+</head>
+<body>
+    <header class="navbar">
+        <span class="menu-icon" id="menu-icon">&#9776;</span>
+        <h1>Calendário</h1>
+        <nav id="nav-links" class="nav-links">
+            <ul>
+                <li><a href="calendario.html"><span class="material-icons">calendar today</span></a></li>
+                <li><a href="perfil.html"><span class="material-icons">person</span></a></li>
+                <li><a href="heaader.html"><span class="material-icons">logout</span> </a></li>
+            </ul>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="curso-container">
+            <header>
+                <h1>📅 Calendário de Eventos</h1>
+            </header>
+            
+            <section class="eventos">
+                <h2>Próximos Eventos</h2>
+                <ul>
+                    <li><strong>01/03/2023</strong> - Aula ao Vivo: Introdução à Programação</li>
+                    <li><strong>15/03/2023</strong> - Entrega do Projeto 1</li>
+                    <li><strong>20/03/2023</strong> - Revisão para a Prova</li>
+                    <li><strong>25/03/2023</strong> - Prazo Final para Tarefas</li>
+                </ul>
+            </section>
+
+            <section class="agendamento">
+                <h2>📌 Agende seus Estudos</h2>
+                <form>
+                    <label for="study-date">Data:</label>
+                    <input type="date" id="study-date" required>
+
+                    <label for="study-time">Hora:</label>
+                    <input type="time" id="study-time" required>
+
+                    <label for="study-topic">Tópico:</label>
+                    <input type="text" id="study-topic" placeholder="Ex: Revisão de Algoritmos" required>
+
+                    <button type="submit" class="btn-agendar">Agendar</button>
+                </form>
+            </section>
+
+            <section class="forum">
+                <h2>💬 Fórum de Discussão</h2>
+                <div class="forum-container">
+                    <h3>Tópicos Recentes</h3>
+                    <ul>
+                        <li><a href="#">Dúvidas sobre o Projeto 1</a></li>
+                        <li><a href="#">Compartilhando Recursos de Estudo</a></li>
+                        <li><a href="#">Discussão sobre Introdução à Programação</a></li>
+                    </ul>
+                    <form>
+                        <label for="new-topic">Novo Tópico:</label>
+                        <input type="text" id="new-topic" required>
+                        <button type="submit" class="btn-postar">Postar</button>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </main>
+</body>
+</html>

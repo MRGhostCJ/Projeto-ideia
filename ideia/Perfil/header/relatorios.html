@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatórios do Administrador</title>
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <link rel="stylesheet" href="../css/relatorios.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="../js/libs/chart.min.js"></script>
+    <script src="../js/relatorios.js" defer></script>
+    <script src="../js/ttt.js"></script>
+</head>
+<body>
+    <div class="dashboard-container">
+        <aside class="Blateral">
+            <h2>Admin</h2>
+            <ul>
+                <li><a href="dashboard.html"><span class="material-icons">dashboard</span> <!--Visão Geral--></a></li>
+                <li><a href="relatorios.html"><span class="material-icons">bar_chart</span>  <!--Relatórios--></a></li>
+                <li><a href="config.html"><span class="material-icons">settings</span><!--Configurações--></a></li>
+                <li><a href="heaader.html"><span class="material-icons">logout</span> <!--Sair--></a></li>
+            </ul>
+        </aside>
+        <span class="menu-icon" id="menu-icon">&#9776;</span>
+        <main class="main-content">
+            <section>
+                <div class="report-grid">
+                    <div class="report-item">
+                        <h3>Relatório de Frequência</h3>
+                        <canvas id="attendanceChart"></canvas>
+                    </div>
+                    <div class="report-item">
+                        <h3>Desempenho Comparativo</h3>
+                        <canvas id="performanceChart"></canvas>
+                    </div>
+                    <div class="report-item">
+                        <h3>Resumo de Conclusões</h3>
+                        <canvas id="completionChart"></canvas>
+                    </div>
+                </div>
+            </section>
+            <section id="activity-report">
+                <h2>Relatório de Atividades</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Aluno</th>
+                            <th>Atividades Concluídas</th>
+                            <th>Tarefas Pendentes</th>
+                            <th>Tempo Gasto</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Dados das atividades dos alunos -->
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de Informática</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="../js/navbar.js" defer></script>
+</head>
+<body>
+    <header class="navbar">
+        <span class="menu-icon" id="menu-icon">&#9776;</span>
+        <h1>Informática</h1>
+        <nav id="nav-links" class="nav-links">
+            <ul>
+                <li><a href="calendario.php"><span class="material-icons">event</span></a></li>
+                <li><a href="perfil.php"><span class="material-icons">person</span></a></li>
+                <li><a href="logout.php"><span class="material-icons">logout</span> </a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <aside class="sidebar">
+            <h2>Informática</h2>
+            <ul>
+                <li><a href="PdfInformatica.php">Materiais PDF</a></li>
+                <li><a href="VideoInformatica.php">Vídeos</a></li>
+                <li><a href="prof.php">Professores</a></li>
+            </ul>
+        </aside>
+        <main class="main-content">
+            <h1>Bem-vindo ao Curso de Informática</h1>
+            <p>Aqui você encontrará todos os materiais e atividades do curso de Informática.</p>
+            <div class="content">
+                <div class="card" id="materiais">
+                    <h3>Materiais de Estudo</h3>
+                    <a href="PdfInformatica.php" target="_blank">Pdf</a>
+                    <a href="VideoInformatica.php" target="_blank">Video aula</a>
+                    <a href="materiais/aula3.pdf" target="_blank">Aula 3</a>
+                </div>
+                <div class="card" id="atividades">
+                    <h3>Atividades Práticas</h3>
+                    <a href="atividades/projeto1.pdf" target="_blank">Projeto 1</a>
+                    <a href="atividades/projeto2.pdf" target="_blank">Projeto 2</a>
+                </div>
+                <div class="card" id="forum">
+                    <h3>Fórum de Discussão</h3>
+                    <a href="forum.php">Acesse o Fórum</a>
+                </div>
+                <div class="card" id="calendario">
+                    <h3>Calendário</h3>
+                    <a href="calendario.php">Veja o Calendário</a>
+                </div>
+                <div class="card" id="perfil">
+                    <h3>Perfil do Aluno</h3>
+                    <a href="perfil.php">Acesse seu Perfil</a>
+                </div>
+            </div>
+        </main>
+    </div>
+    <footer>
+        <p>&copy; 2025 Colégio Pomba D'Amizade. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

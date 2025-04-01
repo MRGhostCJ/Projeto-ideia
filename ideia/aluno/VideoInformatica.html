@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Vídeos do Curso de Informática">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap" rel="stylesheet">
+    <link rel="icon" href="../images/icon.svg">
+    <link rel="stylesheet" href="../css/aluno.css">
+    <title>Vídeos do Curso de Informática</title>
+</head>
+<body>
+    <div class="container">
+        <!-- Barra de Navegação -->
+        <header class="navbar">
+            <button class="menu-toggle" aria-label="Menu">&#9776;</button>
+            <nav class="nav-links">
+                <ul>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Ajuda</a></li>
+                    <li><a href="index.html">Login</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Seção Superior -->
+        <section class="header-section">
+            <!-- Imagem de fundo será adicionada via CSS -->
+        </section>
+
+        <!-- Introdução -->
+        <section class="intro">
+            <p>Bem-vindo ao módulo de vídeos do curso de Informática. Aqui você encontrará aulas em vídeo para complementar seus estudos. Escolha uma aula abaixo para começar!</p>
+        </section>
+
+        <!-- Slider de Vídeos -->
+        <main>
+            <section class="video-slider">
+                <div class="slider-wrapper">
+                    <!-- Os vídeos serão carregados dinamicamente do banco de dados -->
+                    <div class="video-item">
+                        <div class="video-placeholder">Vídeo 1</div>
+                    </div>
+                    <div class="video-item">
+                        <div class="video-placeholder">Vídeo 2</div>
+                    </div>
+                    <div class="video-item">
+                        <div class="video-placeholder">Vídeo 3</div>
+                    </div>
+                    <div class="video-item">
+                        <div class="video-placeholder">Vídeo 4</div>
+                    </div>
+                </div>
+                
+                <!-- Controles do Slider -->
+                <button class="slider-btn prev-btn" aria-label="Anterior">&#10094;</button>
+                <button class="slider-btn next-btn" aria-label="Próximo">&#10095;</button>
+            </section>
+        </main>
+
+        <!-- Cards de Vídeos -->
+        <section class="video-cards">
+            <h2>Outros Vídeos</h2>
+            <div class="card-container">
+                <div class="card">
+                    <img src="../images/video-placeholder.jpg" alt="Vídeo 1">
+                    <h3>Aula 5: Redes de Computadores</h3>
+                    <a href="#" class="btn-watch">Assistir</a>
+                </div>
+                <div class="card">
+                    <img src="../images/video-placeholder.jpg" alt="Vídeo 2">
+                    <h3>Aula 6: Sistemas Operacionais</h3>
+                    <a href="#" class="btn-watch">Assistir</a>
+                </div>
+                <div class="card">
+                    <img src="../images/video-placeholder.jpg" alt="Vídeo 3">
+                    <h3>Aula 7: Fundamentos de Programação</h3>
+                    <a href="#" class="btn-watch">Assistir</a>
+                </div>
+                <div class="card">
+                    <img src="../images/video-placeholder.jpg" alt="Vídeo 4">
+                    <h3>Aula 8: Segurança da Informação</h3>
+                    <a href="#" class="btn-watch">Assistir</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Rodapé -->
+        <footer class="footer">
+            <p>&copy; 2025 Colégio Pomba D'Amizade. Todos os direitos reservados.</p>
+        </footer>
+    </div>
+
+    <script src="../js/slider.js"></script>
+    <script src="../js/menu.js"></script>
+</body>
+</html>

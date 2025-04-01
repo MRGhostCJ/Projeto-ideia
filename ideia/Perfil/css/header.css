@@ -1,0 +1,190 @@
+/* @import url(""); */
+
+*{        
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    box-sizing: border-box; /* Garante que padding e borda não afetem dimensões */
+}
+
+header {
+    z-index: 10;
+    background: #000;
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 10px;
+}
+
+header h1 {
+    color: white;
+    font-weight: 800;
+    font-size: 25pt;
+    font-family: Arial, sans-serif;
+}
+
+header nav button {
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    padding: 10px;
+    transition: .5s ease;
+}
+
+header nav button:hover {
+    transform: translateY(-10px);
+    border-radius: 8px;
+    border: none;
+}
+
+header nav button a {
+    font-size: 12pt;
+    text-decoration: none;
+    color: rgb(245, 240, 240);
+}
+
+header nav button a:hover {
+    color: rgb(217, 134, 10);
+}
+
+header nav button a.ativo {
+    color: rgb(217, 134, 10);
+}
+
+main {
+    position: relative;
+    width: 100%;
+}
+
+main img#bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Ajuste para Galeria */
+.slider {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    position: relative;
+    scroll-snap-type: x mandatory;
+}
+
+.slider .slide {
+    flex: 1 0 100%;
+    transition: transform 0.5s ease-in-out;
+    text-align: center;
+    scroll-snap-align: center;
+}
+
+.slider img {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Ajuste para Texto */
+section.s2 .r h1 {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+    color: white;
+}
+
+section.s2 .r p {
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: justify;
+    padding: 10px;
+    color: white;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header nav button {
+        margin: 5px 0;
+    }
+
+    section.s1 h1 {
+        font-size: 25px;
+    }
+
+    .slider {
+        max-width: 100%;
+    }
+
+    .slider img {
+        max-height: 300px;
+    }
+
+    section.s2 .r h1 {
+        font-size: 20px;
+    }
+
+    section.s2 .r p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .slider img {
+        max-height: 250px;
+    }
+    
+    section.s2 .r h1 {
+        font-size: 18px;
+    }
+    
+    section.s2 .r p {
+        font-size: 12px;
+    }
+}
+
+
+    header nav button {
+        margin: 5px 0;
+    }
+
+    section.s1 h1 {
+        font-size: 25px;
+    }
+
+    section.s2 .card {
+        flex-direction: column;
+    }
+
+    section.s2 .card .card {
+        width: 90%;
+        margin: 10px 0;
+    }
+
+::-webkit-scrollbar{
+    width: 0px;
+}

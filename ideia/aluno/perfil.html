@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil do Aluno</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../css/aluno.css">
+    <script src="../js/libs/chart.min.js"></script>
+    <script src="../js/perfil.js" defer></script>
+</head>
+<body>
+    <div class="curso-container">
+        <header>
+            <h1>👤 Perfil do Aluno</h1>
+        </header>
+
+        <section class="perfil-content">
+            <div class="info-pessoal">
+                <h2>📌 Informações Pessoais</h2>
+                <form>
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" value="" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" value="" required>
+
+                    <label for="course">Curso:</label>
+                    <input type="text" id="course" value="" required>
+
+                    <button type="submit" class="btn-save">Salvar</button>
+                </form>
+            </div>
+
+            <div class="progresso">
+                <h2>📊 Progresso nos Estudos</h2>
+                <canvas id="progressChart"></canvas>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

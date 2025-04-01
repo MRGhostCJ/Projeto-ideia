@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+}
+
+.bg{
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-position: center;
+    background-repeat: none;
+    background-clip: border-box;
+    background-size: cover;
+}
+
+body{
+    background: #d9dbe6b6;
+}
+
+.divFrom{
+    background: #fff;
+    width: 400px;
+    height: 500px;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-shadow: 8px 8px 8px #444;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.divFrom h1{
+    position: relative;
+    margin-bottom: 10px;
+    text-decoration: underline;
+}
+
+.divFrom .Entradas{
+    position: relative;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.divFrom .Entradas label{
+    margin-left: -250px;
+    margin-bottom: 10px;
+}
+
+.divFrom .Entradas input{
+    width: 300px;
+    height: 30px;
+    background: #ccc;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+}
+
+.divFrom button{
+    background: #000;
+    margin: 10px;
+    border-radius: 8px;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.divFrom .Links{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.divFrom .Links button{
+    background: transparent;
+    border: none;
+    color: #000;
+    transition: .5s ease;
+}
+
+.divFrom .Links button:hover{
+    font-size: 10.5pt;
+    color: #eee;
+}
+
+.DivErro{
+    position: relative;
+    background: rgb(149, 54, 54);
+    color: white;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 12pt;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    width: 310px;
+
+}
+
+/* Div Login */
+.divFrom .DivLogin{
+    position: absolute;
+}
+
+/* Div Criar conta */
+.divFrom .DivCadastro{
+    position: absolute;
+    display: none;
+}

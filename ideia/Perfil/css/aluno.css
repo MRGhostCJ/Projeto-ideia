@@ -1,0 +1,1154 @@
+/* Estilos Gerais */
+body {
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(251, 251, 251);
+    color: black;
+}
+
+.container {
+    min-height: 100vh;
+    background-color: rgb(251, 251, 251);
+}
+
+/* Barra de Navegação */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    height: 50px; /* ou o valor que preferir */
+    padding: 0 10px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 2rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
+}
+
+.menu-toggle {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none; /* Oculto no desktop */
+}
+
+.navbar h1 {
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.navbar nav button {
+    background: none;
+    border: none;
+    margin-left: 1rem;
+    font-size: 1rem;
+    color: white;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.navbar nav button a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.navbar nav button:hover {
+    color: #ffcc00;
+}
+
+.header-image {
+    width: 150px;
+    height: 50px;
+    background-color: #ddd;
+    border-radius: 4px;
+}
+
+.nav-links ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.nav-links ul li a:hover {
+    color: #ffcc00;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 3vh;
+    cursor: pointer;
+    position: fixed;
+    top: 7vh;
+    left: 1vh;
+    z-index: 2001;
+    background-color: #0066cc;
+    color: white;
+    padding: 1vh;
+    border-radius: 5px;
+}
+
+.hero {
+    background-image: url('../imagem/bg.jpg');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    background-color: #0066cc;
+    color: #0865f0;
+    text-align: center;
+    padding: 20px;
+    background-repeat: no-repeat; 
+    background-size: cover;
+    background-position: center; 
+}
+
+.hero h2 {
+    font-size: 2.5em;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    font-size: 1.5em;
+    color: #0066cc;
+}
+
+.card a {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #fafafa;
+    background-color: #0066cc;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.card a:hover {
+    background-color: #004d99;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #f4f4f4;
+    color: #333;
+    margin-top: 2rem;
+    border-top: 1px solid #ccc;
+}
+
+.curso-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Cabeçalho */
+header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 5.6rem;
+    background-color: white;
+    z-index: 69;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.menu-btn {
+    margin: 0 2.4rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.home-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80px;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+#logo {
+    width: 80px;
+    height: 24px;
+}
+
+.search-bar {
+    width: 700px;
+    max-width: 700px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.search-input {
+    width: 100%;
+    height: 30px;
+    padding: 1.1rem;
+    font-size: 1.6rem;
+    background-color: white;
+    border: 1px solid rgb(165, 164, 164);
+}
+
+.search-btn {
+    min-width: 65px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    border: 1px solid grey;
+    background-color: rgb(248, 247, 247);
+}
+
+.search-btn img {
+    width: 20px;
+    margin: auto;
+}
+
+.user-options {
+    display: flex;
+}
+
+.user-options .btn {
+    margin-right: 2.4rem;
+    height: 40px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.user-options .sign-btn {
+    width: 106px;
+    align-items: center;
+    justify-content: space-evenly;
+    display: flex;
+    font-weight: 500;
+    font-size: 1.4rem;
+    border-radius: 2px;
+    border: 2px solid #2692f0;
+}
+
+.sign-btn span {
+    color: #1771be;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input, button {
+    margin-bottom: 15px;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+canvas {
+    width: 100% !important;
+    height: 400px !important;
+}
+
+.forum {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.forum h3 {
+    margin-bottom: 20px;
+}
+
+.forum ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.forum li {
+    margin-bottom: 10px;
+}
+
+.forum form {
+    display: flex;
+    flex-direction: column;
+}
+
+.forum label {
+    margin-bottom: 5px;
+}
+
+.forum input, .forum button {
+    margin-bottom: 15px;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.forum button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.forum button:hover {
+    background-color: #0056b3;
+}
+
+/* Melhorias no layout do Calendário */
+.eventos ul {
+    list-style: none;
+    padding: 0;
+}
+
+.eventos li {
+    background: #f0f8ff;
+    padding: 10px;
+    margin: 5px 0;
+    border-left: 5px solid #0066cc;
+    border-radius: 5px;
+}
+
+/* Formulário de agendamento */
+.agendamento form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.btn-agendar {
+    background-color: #0066cc;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+}
+
+.btn-agendar:hover {
+    background-color: #004d99;
+}
+
+/* Fórum */
+.forum-container {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.forum-container ul {
+    padding: 0;
+}
+
+.forum-container li {
+    background: #f0f8ff;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+/* Estilização do perfil */
+.perfil-content {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.info-pessoal, .progresso {
+    flex: 1 1 45%;
+}
+
+.btn-save {
+    background-color: #0066cc;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+}
+
+.btn-save:hover {
+    background-color: #004d99;
+}
+
+/* Gráfico */
+#progressChart {
+    width: 100% !important;
+    max-height: 300px;
+}
+
+.pdf-container, .video-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.pdf-list {
+    list-style: none;
+    padding: 0;
+}
+
+.pdf-list li {
+    margin-bottom: 1rem;
+}
+
+.pdf-list li a {
+    text-decoration: none;
+    color: #071eee;
+    font-size: 1.2em;
+}
+
+.pdf-list li a:hover {
+    text-decoration: underline;
+}
+
+.video-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.video-item {
+    flex: 1 1 calc(33.333% - 1rem);
+    background-color: #f4f4f4;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.video-item video {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.video-item p {
+    margin-top: 0.5rem;
+    font-size: 1em;
+    color: #333;
+}
+
+.pdf-list, .video-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.pdf-item, .video-item {
+    flex: 1 1 calc(33.333% - 1rem);
+    background-color: #f4f4f4;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.pdf-item:hover, .video-item:hover {
+    transform: translateY(-5px);
+}
+
+.pdf-item img, .video-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.pdf-item h3, .video-item h3 {
+    font-size: 1.2em;
+    color: #333;
+    margin: 0.5rem 0;
+}
+
+.pdf-item p, .video-item p {
+    font-size: 1em;
+    color: #666;
+    margin: 0.5rem 0;
+}
+
+.btn-download, .btn-watch {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #071eee;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.btn-download:hover, .btn-watch:hover {
+    background-color: #004bb5;
+}
+
+/* Estilos para a página de vídeos */
+.video-container {
+    padding: 2rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+.video-container h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #071eee;
+    margin-bottom: 2rem;
+}
+
+.video-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.video-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.video-item img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+}
+
+.video-item h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.btn-watch {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #071eee;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.btn-watch:hover {
+    background-color: #004bb5;
+}
+
+/* Rodapé */
+.footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #f4f4f4;
+    color: #333;
+    margin-top: 2rem;
+    border-top: 1px solid #ccc;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar ul li {
+        margin: 5px 0;
+    }
+
+    .hero {
+        height: 200px;
+    }
+
+    .hero h2 {
+        font-size: 2em;
+    }
+
+    .perfil-content {
+        flex-direction: column;
+    }
+
+    .info-pessoal, .progresso {
+        flex: 1 1 100%;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 70vw;
+        height: 100vh;
+        background-color: #071eee;
+        padding-top: 10vh;
+        transform: translateX(-100%);
+        transition: transform 0.3s ease-in-out;
+        z-index: 1000;
+        visibility: hidden; /* Esconde sem usar display: none */
+        opacity: 0;
+    }
+
+    .nav-links.active {
+        transform: translateX(0);
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .nav-links ul {
+        flex-direction: column;
+        align-items: flex-start; /* Alinha os itens à esquerda */
+        padding-left: 2vh; /* Adiciona um pouco de espaço à esquerda */
+    }
+
+    .nav-links ul li {
+        margin: 2vh 0;
+    }
+
+    .nav-links ul li a {
+        width: 100%; /* Garante que os links ocupem toda a largura */
+        display: flex;
+        align-items: center;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.9);
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .pdf-container, .video-container {
+        padding: 1rem;
+    }
+
+    .video-item {
+        flex: 1 1 100%;
+    }
+
+    .pdf-item, .video-item {
+        flex: 1 1 100%;
+    }
+
+    .video-grid {
+        display: flex;
+        overflow-x: auto;
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    .video-item {
+        flex: 0 0 80%;
+        max-width: 80%;
+    }
+}
+
+/* Conteúdo Principal */
+.video-container {
+    padding: 8rem;
+    border-bottom: 1px solid rgba(170, 170, 170, 0.2);
+}
+
+.player {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 25px;
+    height: 0;
+}
+
+.player iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.video-info {
+    padding-top: 2rem;
+}
+
+.video-title {
+    font-size: 1.8em;
+    font-weight: 400;
+}
+
+.video-primary-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: -1px;
+}
+
+.video-views-date {
+    font-size: 1.4rem;
+    color: rgb(95, 94, 94);
+}
+
+.video-options {
+    display: flex;
+}
+
+.video-options .btn {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 32px;
+    padding-left: 1rem;
+    margin-left: 1rem;
+}
+
+.video-options .btn img {
+    width: 20px;
+    height: 20px;
+}
+
+.video-options .btn span {
+    color: rgb(95, 94, 94);
+    font-size: 1.3rem;
+    font-weight: 500;
+    padding-left: 0.8rem;
+}
+
+/* Introdução */
+.intro {
+    padding: 2rem;
+    text-align: center;
+    background-color: #f9f9f9;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Vídeos */
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    padding: 2rem;
+}
+
+.video-item {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+    padding-top: 56.25%; /* Aspect ratio 16:9 */
+}
+
+.video-placeholder {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    color: #666;
+}
+
+/* Slider para Mobile */
+@media (max-width: 768px) {
+    .video-grid {
+        display: flex;
+        overflow-x: auto;
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    .video-item {
+        flex: 0 0 80%;
+        max-width: 80%;
+    }
+}
+
+/* Vídeo Principal */
+.video-container {
+    padding: 2rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+.player {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+}
+
+.player iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.video-info {
+    margin-top: 1rem;
+}
+
+.video-title {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.video-description {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 0.5rem;
+}
+
+.video-tags {
+    font-size: 0.9rem;
+    color: #888;
+}
+
+/* Outras Aulas */
+.video-list {
+    padding: 2rem;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.video-list h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    color: #071eee;
+    margin-bottom: 1.5rem;
+}
+
+.video-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.video-item img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+}
+
+.video-item h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.btn-watch {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #071eee;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.btn-watch:hover {
+    background-color: #004bb5;
+}
+
+/* Rodapé */
+.footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #f4f4f4;
+    color: #333;
+    margin-top: 2rem;
+    border-top: 1px solid #ccc;
+}
+
+/* Seção Superior */
+.header-section {
+    height: 200px;
+    background-color: #f4f4f4;
+    background-image: url('../imagem/bg.jpg'); /* Substitua pela imagem real */
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+}
+
+/* Slider de Vídeos */
+.video-slider {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 800px; /* Limita o tamanho do slider no desktop */
+    margin: 2rem auto;
+    height: 450px; /* Altura fixa para os vídeos */
+}
+
+.slider-wrapper {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: opacity 1s ease-in-out;
+}
+
+.video-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    color: #666;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.video-item.active {
+    opacity: 1;
+    z-index: 1;
+}
+
+.slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    z-index: 10;
+    border-radius: 50%;
+}
+
+.prev-btn {
+    left: 10px;
+}
+
+.next-btn {
+    right: 10px;
+}
+
+.slider-btn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .video-item {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .video-slider {
+        height: 300px; /* Reduz a altura no mobile */
+    }
+}
+
+/* Slider de Vídeos */
+.video-slider {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 800px; /* Ajusta o tamanho no desktop */
+    margin: 2rem auto;
+    height: 300px; /* Altura fixa para os vídeos */
+}
+
+.slider-wrapper {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.video-item {
+    flex: 0 0 100%;
+    max-width: 100%;
+    position: relative;
+    background-color: #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    color: #666;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .video-slider {
+        height: 200px; /* Reduz a altura no mobile */
+    }
+}
+
+/* Cards de Vídeos */
+.video-cards {
+    padding: 2rem;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    margin-top: 2rem;
+}
+
+.video-cards h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+}
+
+.card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 1rem;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.card h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.btn-watch {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #071eee;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.btn-watch:hover {
+    background-color: #004bb5;
+}

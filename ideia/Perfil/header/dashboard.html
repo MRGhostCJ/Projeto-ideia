@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard do Administrador</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <script src="../js/libs/chart.min.js"></script>
+    <script src="../js/dashboard.js" defer></script>
+    <script src="../js/ttt.js"></script>
+</head>
+<body>
+    <div class="dashboard-container">
+        <aside class="Blateral" id="Blateral">
+            <h2>Admin</h2>
+            <ul>
+                <li><a href="dashboard.html"><span class="material-icons">dashboard</span> </a></li>
+                <li><a href="relatorios.html"><span class="material-icons">bar_chart</span> </a></li>
+                <li><a href="config.html"><span class="material-icons">settings</span> </a></li>
+                <li><a href="heaader.html"><span class="material-icons">logout</span> </a></li>
+            </ul>
+        </aside>
+        <span class="menu-icon" id="menu-icon">&#9776;</span>
+        <main class="ConteudoPrincipal">
+            <section id="dashboard">
+                <div class="cards">
+                    <div class="card">
+                        <h3>Usuários</h3>
+                        <p>0 cadastrados</p>
+                    </div>
+                    <div class="card">
+                        <h3>Conteúdo</h3>
+                        <p>0 postagens</p>
+                    </div>
+                    <div class="card">
+                        <h3>Visitas</h3>
+                        <p>000 visitas este mês</p>
+                    </div>
+                </div>
+                <section id="courseTable">
+                    <h2>Cursos Disponíveis</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Nome do Curso</th>
+                                <th>Área</th>
+                                <th>Data de Início</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Técnico de Informática</td>
+                                <td>Informática</td>
+                                <td>01/02/2023</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Técnico de Construção Civil</td>
+                                <td>Construção Civil</td>
+                                <td>15/02/2023</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
